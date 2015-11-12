@@ -1,0 +1,26 @@
+extends layout
+
+block content
+	h1 Quizzes
+	for quiz in quizzes	
+		table(border="1", cellpadding="5")
+			tr
+				td(colspan="2") Quiz Name: #{quiz.name}
+				td Tour: #{quiz.tour}
+			tr
+				td Questions
+				td Answers
+				td Answer Key	
+				- each q in quiz.questions
+					tr
+						td= q.question
+						td
+							- var n = 1
+							while n < 6
+								|Answer #{n}: #{q.answers[n]}
+								br
+								- n++
+						td Answer: #{q.answerKey}
+		p
+	a(href='/addQuiz2') Add a Quiz
+  

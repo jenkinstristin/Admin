@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Civil Engineering Tour - Quizzes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/admin.css">
+        <script src="_js/jquery-2.1.4.js"></script>
+        <script src="_js/Quiz.js"></script>
+        <script src="_js/quizHelper.js"></script>
+<style type="text/css">
+.header {
+height: 70px;
+}
+
+#tempQuestion {
+	padding: 3%;
+	color: blue;
+	display: table;
+	width: 80%;
+	height: 50%;
+	border: 1px solid black;
+	border-collapse: separate;
+}
+
+.question {
+	padding: 3%;
+	margin-bottom: 2%;
+	border: 1px solid black;
+	border-radius: 3% 3% 3% 3%;
+	width: 80%;
+	height: 10%;
+	display: table-header-group;
+} 
+
+.answer {
+	padding: 3%;
+	border: 1px solid red;
+	border-radius: 3% 3% 3% 3%;
+	width: 40%;
+	height: 20%;
+	display: inline-block;
+} 
+
+.submittedQs {
+	display: inline-block;
+}
+</style>
+    </head>
+    <body>
+	<div class="header">
+			<img src='../img/csuslogo.png'></img>
+		</div>
+		<div class="tabs">
+			<ul>
+				<li id="li_tab1" onclick="window.location='index.html'"><a>Home</a></li>
+				<li id="li_tab2" onclick="window.location='tourSites.html'"><a>Tour Sites</a></li>
+				<li id="li_tab3" onclick="window.location='tours.html'"><a>Tours</a></li>
+				<li id="li_tab4" onclick="window.location='quiz.html'"><a>Quizzes</a></li>
+				<li id="li_tab5" onclick="window.location='surveys.html'"><a>Surveys</a></li>
+				<li id="li_tab6" onclick="window.location='statistics.html'"><a>View Statistics</a></li>
+				<li class="spanner"></li> 
+			</ul>
+		</div>
+		<div class="Content_Area">
+			<p> Quizzes are here. Should display the scrolling list of database entries similar to tour sites/tours. Separate "Add quiz" button could bring up Dennis's cool stuff!</p>
+			
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="quiz">
+            <div id="initQuiz">
+                <form>
+                    <p>Quiz Name:
+  <input type="text" id="quizName">
+                    </p>
+                    <p><br>
+                      Tour link ID:
+                      <input type="text" id="tourID">
+                      <br>
+                    </p>
+                    <p>
+                      <input type="button" value="Submit" id="newQuiz">
+                    </p>
+                </form>
+            </div>
+            <div id="questions">
+
+            </div>
+        </div>
+		</div>
+<div class="footer">
+	<p>Copyright Alpha Squad 2015. Please don't sue us, Sac State.</p>
+</div>
+    </body>
+</html>
